@@ -11,7 +11,7 @@ Tweets were mined from early-mid September until November 9th. I grabbed tweets 
 
 `*/30 * * * * export PATH=$PATH:/usr/local/bin/:/Users/cbaker4/opt/miniconda3/bin:/Users/cbaker4/opt/miniconda3/condabin:/Library/Frameworks/Python.framework/Versions/3.8/bin/ && source activate python && cd /Users/cbaker4 && sh run_tweets.sh`
 
-I also include some sample output of the pipeline as `sample.json` and `sample.csv`
+I also include some sample output of the pipeline as `sample.csv`.
 
 ## run_tweets.sh
 
