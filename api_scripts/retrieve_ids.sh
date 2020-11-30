@@ -1,5 +1,5 @@
 while read id; do
-	echo "curl -X GET -H 'Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAMe7IQEAAAAA7Zz%2B47PgMad%2FSKTayqc%2FF9Hg1w4%3Daa8mcKCL8rtNPPEwyqyJWUErhY24BebTaPeJPR2VTlEiub1vyc' 'https://api.twitter.com/1.1/statuses/show.json?id=${id}'; echo ''; sleep 1" >> run_commands.sh
+	echo "curl -X GET -H 'Authorization: Bearer TOKEN' 'https://api.twitter.com/1.1/statuses/show.json?id=${id}'; echo ''; sleep 1" >> run_commands.sh
 done < $1
 
 outfile=$(echo $1 | sed -e 's/_tweet_ids.txt//g')
